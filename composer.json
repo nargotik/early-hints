@@ -26,6 +26,10 @@
   "require-dev": {
     "phpunit/phpunit": "^9.6"
   },
+  "scripts": {
+    "test": "vendor/bin/phpunit --testdox",
+    "lint": "php -l src/EarlyHints.php && php -l src/PhpHeaderEmitter.php && php -l src/HeaderEmitter.php && php -l src/functions.php"
+  },
   "minimum-stability": "stable",
   "prefer-stable": true
 }
