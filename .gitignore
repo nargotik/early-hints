@@ -1,0 +1,39 @@
+# --- OS / environment ---
+.DS_Store
+Thumbs.db
+
+# --- Composer (for libraries, don't commit the lock file) ---
+/vendor/
+/composer.lock
+/composer.phar
+
+# --- PHPUnit ---
+.phpunit.result.cache
+/phpunit.xml
+/coverage/
+/build/
+/reports/
+
+# --- Static analysis / linters ---
+.php-cs-fixer.cache
+phpstan-result.cache
+/.psalm.cache
+
+# --- IDEs / editors ---
+/.idea/
+/.vscode/
+/*.code-workspace
+
+# --- Logs / temp ---
+*.log
+/tmp/
+/.cache/
+
+# --- Env files (if you use dotenv locally) ---
+.env
+.env.local
+
+# --- Tools / phars ---
+.phive/
+*.phar
+/tools/
